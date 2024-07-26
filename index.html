@@ -19,6 +19,8 @@
         position: relative;
         min-height: 100vh;
         margin: 0;
+        display: flex;
+        flex-direction: column;
       }
       h1 {
         font-size: 36px;
@@ -36,51 +38,58 @@
       .underline {
         text-decoration: underline;
       }
-      .footer {
-        position: absolute;
-        bottom: 40px; /* Changed from 20px to 40px to move it up by 20px */
-        width: 100%;
+      .content {
+        flex-grow: 1;
       }
       .ascii-art {
-        margin: -50px 0 50px 0; /* Kept as is from the previous adjustment */
+        margin: -50px 0;
         white-space: pre;
         font-family: "Courier New", monospace;
         font-size: 20px;
       }
+      .grantees {
+        margin-top: -70px;
+        margin-bottom: 70px;
+      }
+      .footer {
+        margin-top: auto;
+        padding-bottom: 20px;
+      }
     </style>
   </head>
   <body>
-    <h1>cactus capital</h1>
-    <p>
-      we're high schoolers from northern virginia looking to fund cool projects
-    </p>
-    <p>
-      we provide student builders with microgrants of $50-100 to help them get
-      started
-    </p>
-    <p>
-      you can be at any stage with your project, it can even be just an idea you
-      have
-    </p>
-    <p>
-      we don't want equity; but if you make it big, all we ask is that you let
-      us borrow your jet
-    </p>
-    <p>
-      interested? apply
-      <a
-        href="https://airtable.com/appzrX9Rs1Kh0I1lE/pagNbwJTQPcUP2boA/form"
-        target="_blank"
-        >here</a
-      >. if your idea is compelling, we'll reach out for a chat
-    </p>
-    <p>
-      looking to help fund young builders? email us at
-      <span class="underline">contact@cactuscapital.org</span>
-    </p>
+    <div class="content">
+      <h1>cactus capital</h1>
+      <p>
+        we're high schoolers from northern virginia looking to fund cool projects
+      </p>
+      <p>
+        we provide student builders with microgrants of $50-100 to help them get
+        started
+      </p>
+      <p>
+        you can be at any stage with your project, it can even be just an idea you
+        have
+      </p>
+      <p>
+        we don't want equity; but if you make it big, all we ask is that you let
+        us borrow your jet
+      </p>
+      <p>
+        interested? apply
+        <a
+          href="https://airtable.com/appzrX9Rs1Kh0I1lE/pagNbwJTQPcUP2boA/form"
+          target="_blank"
+          >here</a
+        >. if your idea is compelling, we'll reach out for a chat
+      </p>
+      <p>
+        looking to help fund young builders? email us at
+        <span class="underline">contact@cactuscapital.org</span>
+      </p>
 
-    <div class="ascii-art">
-      <pre>
+      <div class="ascii-art">
+        <pre>
    /|\  
     |||||   
     |||||   
@@ -95,7 +104,15 @@
    |||||  
    |||||  
      ----------------   
-      </pre>
+        </pre>
+      </div>
+
+      <div class="our grantees">
+        <h2>past grantees</h2>
+        <p>jul24: <a href="https://www.linkedin.com/in/jalen-jackson-613303317/" target="_blank">jalen</a>, building the tinder for sneakers</p>
+        <p>jul24: <a href="https://www.linkedin.com/in/himanish-nallanagulagari-29079027a/" target="_blank">himanish</a>, teaching math to kids with developmental disorders</p>
+        <p>jun24: <a href="https://www.linkedin.com/in/shaurya-jain-6a2934266/" target="_blank">shaurya</a>, preventing deer related car accidents with ai</p>
+      </div>
     </div>
 
     <div class="footer">
