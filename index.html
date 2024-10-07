@@ -59,8 +59,18 @@
         margin-bottom: 70px;
       }
       .footer {
+        display: flex;
+        justify-content: space-between;
         margin-top: auto;
-        padding-bottom: 20px;
+        padding: 20px;
+      }
+      .footer-section {
+        flex: 1;
+        padding: 10px;
+      }
+      .footer-section h2 {
+        font-size: 22px;
+        margin-bottom: 10px;
       }
     </style>
   </head>
@@ -117,6 +127,7 @@
 
       <div class="our grantees">
         <h2>past grantees</h2>
+        <p>
           sep24:
           <a href="https://www.linkedin.com/in/alxmat/" target="_blank"
             >alex</a
@@ -152,23 +163,32 @@
             >shaurya</a
           >, preventing deer related car accidents with ai
         </p>
-        
       </div>
     </div>
 
     <div class="footer">
-      <b>our founding partners</b>
-      <p>
-        <a href="https://www.linkedin.com/in/nayelrehman" target="_blank"
-          >nayel</a
-        >
-        &
-        <a
-          href="https://www.linkedin.com/in/arhan-menta-a1a8bb297/"
-          target="_blank"
-          >arhan</a
-        >
-      </p>
+      <div class="footer-section">
+        <h2>our team</h2>
+        <p>
+          <a href="https://www.linkedin.com/in/nayelrehman" target="_blank"
+            >nayel</a
+          >,
+          <a href="https://www.linkedin.com/in/arhan-menta-a1a8bb297/" target="_blank"
+            >arhan</a
+          >, &amp;
+          <a href="https://www.linkedin.com/in/willfadden/" target="_blank"
+            >will</a
+          >
+        </p>
+      </div>
+      <div class="footer-section">
+        <h2>backed by</h2>
+        <p>
+          <a href="https://www.buildergroop.com/" target="_blank">buildergroop</a>
+          &amp;
+          <a href="https://www.1517fund.com/" target="_blank">1517 fund</a>
+        </p>
+      </div>
     </div>
   </body>
 </html>
